@@ -1,0 +1,324 @@
+@font-face {
+    font-family: 'aquawaxmedium';
+    src: url('fonts/aquawax_medium_trial-webfont.eot');
+    src: url('fonts/aquawax_medium_trial-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/aquawax_medium_trial-webfont.woff2') format('woff2'),
+         url('fonts/aquawax_medium_trial-webfont.woff') format('woff'),
+         url('fonts/aquawax_medium_trial-webfont.ttf') format('truetype'),
+         url('fonts/aquawax_medium_trial-webfont.svg#aquawaxmedium') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'aubreyregular';
+    src: url('fonts/aubrey1__-webfont.eot');
+    src: url('fonts/aubrey1__-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/aubrey1__-webfont.woff2') format('woff2'),
+         url('fonts/aubrey1__-webfont.woff') format('woff'),
+         url('fonts/aubrey1__-webfont.ttf') format('truetype'),
+         url('fonts/aubrey1__-webfont.svg#aubreyregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+/* default configuration */
+body {
+	margin :0;
+	font-family: 'aubreyregular','aquawaxmedium',helvetica,arial,sans-serif;
+	font-size: 14px;
+	color: #373737;
+
+}
+.clear{
+	float: none;
+	clear: both;
+
+}
+.center{
+	width: 961px;
+	margin: 0 auto;
+}
+
+/*header configuration*/
+#header{
+	display: block;
+	height: 50px;
+	background-color:  #eaeaea;
+	border-bottom: 1px solid #4b7f82;
+	overflow: hidden;
+}
+#header.fixed{
+background:#eaeaea;
+position: fixed; 
+top: -200px; 
+width: 100%; 
+z-index: 999;
+-webkit-transition: all .4s ease-in-out;
+-o-transition: all .4s ease-in-out;
+transition: all .4s ease-in-out;
+-webkit-transform: translateY(200px);
+-ms-transform: translateY(200px);
+-o-transform: translateY(200px);
+transform: translateY(200px);
+box-shadow: 1px 1px 5px;
+}
+
+#header h2 {
+	float: left;
+	text-align: center;
+	color: #4b7f82;
+}
+#header .navigation {
+	padding-left: 265px;
+	height:50px; 
+	position:relative;
+	font-family: 'steelfishregular';
+
+}
+
+#header .navigation ul {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+/* navigation configuration */
+#header .navigation ul li {
+	display: inline-table;
+	font-size: 15px;
+	font-family: sans-serif;
+
+}
+
+#header .navigation ul li a{
+	display: inline-block;
+	padding: 15px;
+	text-transform: uppercase;
+	color: #59959f;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+#header .navigation ul li a:hover{
+	background-color:#666;
+	color: #ffffff; 
+	display:block;
+	height: 20px;
+}
+#header .navigation .drp {
+	display:none;  
+	position:absolute; 
+	background-color:#ffffff;
+	left:575px; 
+	top:50px; 
+	width:190px;
+}
+#header .navigation ul ul li a{
+	float:none; 
+	display:block; 
+	padding-left:30px; 
+	text-align:left; 
+	width:160px;
+}
+#header .navigation ul ul li a:hover{
+	color: #fff;
+}
+
+/* banner configuration*/
+#banner{ 
+	background-image: url('image/bnr.jpg');
+	background-attachment: fixed;
+	background-position: 0 -150px ;
+	height: 500px;
+    background-size:  cover no-repeat center center;
+    -webkit-background-size: cover;
+	padding: 165px;
+	color: #fff;
+	text-align: center;
+}
+
+#banner h1 {
+	margin-top: 70px;
+    font-family: 'aquawaxmedium';
+	font-size: 55px;
+	text-transform:uppercase;
+	font-weight: normal;
+	text-shadow: 1px 1px 10px rgba(0,0,0,0.5);
+}
+#banner h2 {
+	margin-top: 70px;
+	font-size: 29px;
+	font-weight: normal;
+	font-family: 'aubreyregular';
+	text-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+}
+.btn{
+	margin-top:70px;
+	border:  solid 2px #ffffff;
+	color: #ffffff;
+	text-transform: uppercase;
+	font-family: 'aquawaxmedium';
+	font-size: 16px;
+	text-decoration: none;
+	padding: 10px;
+	display: inline-block;
+
+}
+
+.btn:hover{
+	background-color:#ffffff;
+	color: #59959f; 
+}
+
+/* this for content*/
+#ourservices{
+	padding-top:  50px;
+	padding-bottom: 50px;
+	font-family: 'aquawaxmedium';
+}
+#ourservices .titlekontent{
+	text-transform: uppercase;
+	font-size: 40px;
+	text-align: center;
+	margin-bottom: 20px;
+
+}
+#ourservices .titlekontent span{
+	font-family: 'aquawaxmedium';
+
+}
+.contentlist .listservices {
+	margin-top: 50px;
+	background:#033142;
+	padding: 18px; 
+	float: left;
+	width: 434px;
+	color:#ffffff;
+	margin-bottom: 20px;
+}
+.contentlist .listservices:last-child {
+	float: right;
+}
+.contentlist .listservices h2 {
+	text-transform: uppercase;
+	font-family: 'aquawaxmedium';
+	font-size: 25px;
+	margin-bottom: 10px;
+	margin-top: 0;
+}
+.contentlist .listservices .text{
+	line-height: 25px;
+	margin-bottom: 10px;
+}
+.contentlist .listservices .button a{
+	display: inline-block;
+	padding: 10px 15px;
+	border: solid 2px #ffffff;
+	text-decoration: none;
+	color: #ffffff;
+	text-transform: uppercase;
+	font-family: 'aquawaxmedium';
+}
+.contentlist .listservices .button a:hover{
+	background-color:#ffffff;
+	color: #59959f; 
+}
+
+/*Explain Configuration*/
+#desain h1 {
+	text-transform: uppercase;
+	font-size: 40px;
+	text-align: center;
+	margin-bottom: 20px;
+	font-family: 'aquawaxmedium';
+
+
+}
+#desain {
+	margin-top: 50px;
+}
+
+#desain p {
+	font-size: 15px;
+	font-family: 'aquawaxmedium';
+}
+/* form configuration */
+#kontak {
+	margin-top: 95px;
+}
+#kontak h1{
+	text-transform: uppercase;
+	font-size: 40px;
+	text-align: center;
+	margin-bottom: 20px;
+	font-family: 'aquawaxmedium';
+	
+}
+#form {
+float: none;
+display: list-item;
+margin-top: 60px;
+} 
+
+#form .center input {
+    width: 390px;
+    height: 25px;
+}
+#form .center textarea {
+    width: 390px;
+    height: 150px;
+}
+#form .center [type="submit"] {
+    margin-top: 10px;
+    width: 150px;
+    height: 30px;
+    background-color: #558F9A;
+    border-style: none;
+    color: #ffffff;
+    font-family: 'aquawaxmedium';
+    font-size: 18px;
+    border-radius: 5px;
+
+}
+
+#form .right  {
+    float: right;
+    margin-top: -400px;
+    margin-left: 390px;
+    margin-right: 100px;
+
+}
+#form .conright{
+
+}
+
+/* this for notification*/
+#notifsubs{
+	background: #aeabab;
+	padding: 25px 0;
+	margin-top: 40px;
+	box-shadow: 
+}
+#notifsubs h2{
+	font-family: 'aubreyregular';
+	font-style:bold;
+	text-transform: uppercase;
+	font-size: 30px;
+}
+#notifsubs .middle-content{
+	float: left;
+    margin-left: 400px;
+    color: #ffffff;
+}
+#notifsubs .middle-content img:hover{
+		background-color: blue;
+
+
+}
+
+#notifsubs .copyright{
+	color: #ffffff;
+	margin-left: 800px;
+	padding-top: 40px;
+	font-family: sans-serif;
+}

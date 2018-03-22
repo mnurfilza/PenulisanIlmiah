@@ -1,0 +1,1 @@
+setTimeout("location :'index.html'", 1350);

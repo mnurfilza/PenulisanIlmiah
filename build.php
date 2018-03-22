@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" type="text/css" href="renovasi.css">
+<head lang = 'en'>
+    <meta charset="utf-8">
+    <meta name = 'viewport' content="width-device-width, initial-scale=1.0">    
+    <script type="text/javascript" src = "jquery-3.2.0.min.js"></script>
+    <script type="text/javascript" src ="mainmenu.js"></script>
+    <script type="text/javascript" src="loading.js"></script>
+    <script type="text/javascript" src="sticky.js"></script>
+    <script type="text/javascript" src="js/scrip.js"></script>
+    <title>Build</title>
+
+</head>
+<body>
+<!-- this for navbar -->
+<div id ='header'>
+    <div class="center">
+    <h2>Bernaung</h2>
+        <div class = "navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="portofolio.php">Portofolio</a></li>
+                <li><a href="index.html #kontak" class="menu">Contact</a></li>
+                <li><a href="index.html #ourservices" class ="menu" >Order</a>
+                </li>
+            </ul>
+        </div>
+        <div class="clear"></div>
+    </div>
+</div>
+<!-- this for form -->
+<h1 align="center">Build Form</h1>
+<div id="form">
+    <form method="post" action="input_build.php" >
+        <table cellpadding="0" cellspacing="0" border="0" align="center">
+            <tr>
+                <td>Nama</td>
+                <td><input type="text" name="nama" placeholder="Masukan Nama" required="Isi nama Anda dengan benar"></td>
+            </tr>
+            <tr>
+                <td>Tanda Pengenal</td>
+                <td><input type="text" name="id_user" placeholder="Masukan Nomor Tanda Pengenal Anda" required="Isi tanda pengenal anda dengan benar"></td>
+            </tr>
+            <tr>
+                <td>Email</td>
+                <td><input type="email" name="email" placeholder="example@mail.com" required="jangan kosongkan bagian ini"></td>
+            </tr>
+            <tr> 
+                    <td> Jenis Bangunan </td>
+                    <td>
+                    <select name=jenis>
+                    
+                    <option type=text value=0>Pilih Salah Satu
+                    <option type=text value=Kontrakan>Kontrakan
+                    <option type=text value='Rumah Hunian'>Rumah Hunian
+                    
+                    </option>
+                    
+                    </select>
+                    </td>
+           </tr>
+            <tr>
+                <td>No. Telepon</td>
+                <td><input type="text" name="notlp" placeholder="Masukan Nomor Yang Dapat Dihubungi"></td>
+            </tr>
+            <tr>
+                <td>Alamat</td>
+                <td><textarea type="text" name="alamat" placeholder="Masukan Alamat Anda" required="Isi alamat anda"></textarea></td>
+            </tr>
+            <tr>
+                <td>Keterangan</td>
+                <td><textarea type="text" name="keterangan" placeholder="Masukan Keterangan rumah yang akan dibangun"></textarea></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><input type="submit" name="simpan" value="Submit"  >
+                    <input type="reset" value="Cancel" ></td>
+            </tr>
+        </table>
+        </form>
+
+    </div> 
+    
+    <!-- this for footer -->
+<div id="footer">
+    <div class="center">
+        <h3>&copy 2017 Bernaung.com</h3>
+    </div>
+</div>
+
+</body>
+</html>
